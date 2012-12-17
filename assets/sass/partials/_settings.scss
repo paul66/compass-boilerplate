@@ -1,0 +1,92 @@
+/* ==========================================================================
+   SETTINGS
+   ========================================================================== */
+
+
+/* Viewport
+   ========================================================================== */
+
+/**
+ * This is an in-progress W3C spec written to move this viewport information
+ * over to CSS. IE10 and Opera browsers support this. Go ahead and start rolling
+ * this into production sites.
+ *
+ * Ref
+ * http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/
+ * http://dev.w3.org/csswg/css-device-adapt/#the-viewport-rule
+ * http://menacingcloud.com/?c=cssViewportOrMetaTag
+ */
+
+@-moz-viewport      { width: device-width; }
+@-webkit-viewport   { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport          { width: device-width; }
+
+
+
+/* Susy Grid Settings
+   ========================================================================== */
+
+$container-width                : 64em;
+$total-columns                  : 12;
+$column-width                   : 4em;
+$gutter-width                   : 2em;
+$grid-padding                   : $gutter-width / 2;
+
+
+/* Vertical Rhythm
+   ========================================================================== */
+
+/**
+ * Set the vertical rhythm using Compass
+ * http://compass-style.org/reference/compass/typography/vertical_rhythm/
+ * More guidance on usage: http://atendesigngroup.com/blog/vertical-rhythm-compass
+ *
+ * This creates the base font-size and line-height
+ * and sets the em size to the font-size.
+ *
+ */
+
+$base-font-size                 : 16px;
+$base-line-height               : 24px;
+@include establish-baseline;
+
+
+
+
+/* Fonts
+   ========================================================================== */
+
+/**
+ * Create variable to single fonts or entrie font stacks.
+ */
+
+$font-univers-roman             : "Univers LT W01 55 Roman";
+$font-univers-condensed         : "UniversLTW01-57Condense 723821";
+$font-univers-bold              : "Univers LT W01 65 Bold";
+$font-code                      : "Courier New";
+
+
+
+/* Fonts Sizes
+   ========================================================================== */
+$h1-size                        : 28px;
+$h2-size                        : 22px;
+$h3-size                        : 18px;
+$h4-size                        : 16px;
+
+$small-size                     : 11px;
+$micro-size                     : 10px;
+$milli-size                     : 8px;
+
+
+
+/* Colors Settings
+   ========================================================================== */
+
+/* Brand colours - 100% opacity */
+$corp-dark-blue                 : #00295b;
+$corp-light-blue                : #00aee2;
+$corp-dark-grey                 : #5d5c61;
+$corp-light-grey                : #98989c;
